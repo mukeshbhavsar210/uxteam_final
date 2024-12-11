@@ -12,8 +12,7 @@ class Blogs extends Component
     #[Url]
     public $categorySlug = null;
 
-    public function render()
-    {
+    public function render() {
         $categories = Category::all();
         $paginate = 18;
 
