@@ -24,7 +24,6 @@ class Blogs extends Component
                 abort(404);
             }
 
-            
             $articles = Article::orderBy('created_at','DESC')
                 ->where('category_id',$category->id)
                 ->where('status',1)
